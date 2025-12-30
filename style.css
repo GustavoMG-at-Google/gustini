@@ -3,9 +3,28 @@ body {
 }
 .slide {
   height: 100vh;
+  width: 100%;
+}
+.content-overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  background: rgba(0,0,0,0.5);
+}
+.content-overlay h2 {
+  font-size: 5rem;
+  margin: 0;
+  color: white;
+  font-weight: 700;
 }
 .img-holder img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  position: relative;
+  z-index: 1;
 }
